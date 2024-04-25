@@ -1,134 +1,167 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Habib Adebayo" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | Calculator app</title>
-  </head>
-  <body class="theme-one">
-    <section>
-      <header>
-        <h1>Kalkulate</h1>
-        <div>
-          <p>Theme</p>
-          <div class="theme-box">
-            <p class="toggle"></p>
-            <p></p>
-            <p></p>
-          </div>
-        </div>
-      </header>
-      <form action="#" name="forms">
-        <input readonly="true" type="text" name="answer" class="result" />
-        <div class="button-group">
-          <div class="buttons">
-            <input
-              type="button"
-              value="7"
-              onclick="forms.answer.value += '7'"
-            />
-            <input
-              type="button"
-              value="8"
-              onclick="forms.answer.value += '8'"
-            />
-            <input
-              type="button"
-              value="9"
-              onclick="forms.answer.value += '9'"
-            />
-            <input
-              type="button"
-              value="DEL"
-              onclick="forms.answer.value = forms.answer.value.substr(0 , forms.answer.value.length -1)"
-              class="del"
-            />
-          </div>
-          <div class="buttons">
-            <input
-              type="button"
-              value="4"
-              onclick="forms.answer.value += '4'"
-            />
-            <input
-              type="button"
-              value="5"
-              onclick="forms.answer.value += '5'"
-            />
-            <input
-              type="button"
-              value="6"
-              onclick="forms.answer.value += '6'"
-            />
-            <input
-              type="button"
-              value="+"
-              onclick="forms.answer.value += '+'"
-            />
-          </div>
-          <div class="buttons">
-            <input
-              type="button"
-              value="1"
-              onclick="forms.answer.value += '1'"
-            />
-            <input
-              type="button"
-              value="2"
-              onclick="forms.answer.value += '2'"
-            />
-            <input
-              type="button"
-              value="3"
-              onclick="forms.answer.value += '3'"
-            />
-            <input
-              type="button"
-              value="-"
-              onclick="forms.answer.value += '-'"
-            />
-          </div>
-          <div class="buttons">
-            <input
-              type="button"
-              value="."
-              onclick="forms.answer.value += '.'"
-            />
-            <input
-              type="button"
-              value="0"
-              onclick="forms.answer.value += '0'"
-            />
-            <input
-              type="button"
-              value="/"
-              onclick="forms.answer.value += '/'"
-            />
-            <input
-              type="button"
-              value="x"
-              onclick="forms.answer.value += '*'"
-            />
-          </div>
-          <div class="buttons">
-            <input
-              class="reset"
-              type="button"
-              value="Reset"
-              onclick="forms.answer.value = ''"
-            />
-            <input
-              class="equal"
-              type="button"
-              value="="
-              onclick="forms.answer.value = eval(forms.answer.value)"
-            />
-          </div>
-        </div>
-      </form>
-    </section>
-    <script src="script.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<meta
+			name="author"
+			content="Habib Adebayo"
+		/>
+		<link
+			rel="stylesheet"
+			href="./style.css"
+		/>
+<link rel="manifest" href="./manifest.json" />
+		<title
+			>Frontend Mentor | Calculator
+			app</title
+		>
+	</head>
+	<body class="theme-one">
+		<section>
+			<header>
+				<h1>Kalkulate</h1>
+				<div>
+					<p>Theme</p>
+					<div class="theme-box">
+						<p class="toggle"></p>
+						<p></p>
+						<p></p>
+					</div>
+				</div>
+			</header>
+			<form action="#" name="forms">
+				<input
+					readonly="true"
+					type="text"
+					name="answer"
+					class="result"
+				/>
+				<div class="button-group">
+					<div class="buttons">
+						<input
+							type="button"
+							value="7"
+							onclick="forms.answer.value += '7'"
+						/>
+						<input
+							type="button"
+							value="8"
+							onclick="forms.answer.value += '8'"
+						/>
+						<input
+							type="button"
+							value="9"
+							onclick="forms.answer.value += '9'"
+						/>
+						<input
+							type="button"
+							value="DEL"
+							onclick="forms.answer.value = forms.answer.value.substr(0 , forms.answer.value.length -1)"
+							class="del"
+						/>
+					</div>
+					<div class="buttons">
+						<input
+							type="button"
+							value="4"
+							onclick="forms.answer.value += '4'"
+						/>
+						<input
+							type="button"
+							value="5"
+							onclick="forms.answer.value += '5'"
+						/>
+						<input
+							type="button"
+							value="6"
+							onclick="forms.answer.value += '6'"
+						/>
+						<input
+							type="button"
+							value="+"
+							onclick="forms.answer.value += '+'"
+						/>
+					</div>
+					<div class="buttons">
+						<input
+							type="button"
+							value="1"
+							onclick="forms.answer.value += '1'"
+						/>
+						<input
+							type="button"
+							value="2"
+							onclick="forms.answer.value += '2'"
+						/>
+						<input
+							type="button"
+							value="3"
+							onclick="forms.answer.value += '3'"
+						/>
+						<input
+							type="button"
+							value="-"
+							onclick="forms.answer.value += '-'"
+						/>
+					</div>
+					<div class="buttons">
+						<input
+							type="button"
+							value="."
+							onclick="forms.answer.value += '.'"
+						/>
+						<input
+							type="button"
+							value="0"
+							onclick="forms.answer.value += '0'"
+						/>
+						<input
+							type="button"
+							value="/"
+							onclick="forms.answer.value += '/'"
+						/>
+						<input
+							type="button"
+							value="x"
+							onclick="forms.answer.value += '*'"
+						/>
+					</div>
+					<div class="buttons">
+						<input
+							class="reset"
+							type="button"
+							value="Reset"
+							onclick="forms.answer.value = ''"
+						/>
+						<input
+							class="equal"
+							type="button"
+							value="="
+							onclick="forms.answer.value = eval(forms.answer.value)"
+						/>
+					</div>
+				</div>
+			</form>
+		</section>
+		<script>
+			if (
+				"serviceWorker" in navigator
+			) {
+				window.addEventListener(
+					"load",
+					function () {
+						navigator.serviceWorker.register(
+							"/service-worker.js"
+						);
+					}
+				);
+			}
+		</script>
+		<script src="./service-worker.js"></script>
+		<script src="./script.js"></script>
+	</body>
 </html>
