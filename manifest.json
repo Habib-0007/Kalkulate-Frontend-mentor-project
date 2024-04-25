@@ -1,6 +1,7 @@
 {
 	"name": "Kalkulate PWA",
 	"short_name": "Kalkulate",
+	"description": "A simple calculator app",
 	"icons": [
 		{
 			"src": "icon.png",
@@ -10,6 +11,6 @@
 	],
 	"start_url": "/",
 	"display": "standalone",
-	"theme_color": "#ffffff",
-	"background_color": "#ffffff"
+	"theme_color": "hsl(281, 89%, 26%)",
+	"background_color": "#240947"
 }
